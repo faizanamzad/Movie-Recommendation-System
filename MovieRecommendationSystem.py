@@ -12,10 +12,10 @@ import pandas as pd
 #pd.set_option('display.max_rows', 500)
 #pd.set_option('display.max_columns', 500)
 #pd.set_option('display.width', 1000)
-ratings_data = pd.read_csv("G:/F/ML/MovieRecommendationSystem/ml-latest-small/ratings.csv")
+ratings_data = pd.read_csv("ml-latest-small/ratings.csv")
 #print(ratings_data.head())
 
-movie_names = pd.read_csv("G:/F/ML/MovieRecommendationSystem/ml-latest-small/movies.csv")
+movie_names = pd.read_csv("ml-latest-small/movies.csv")
 #print(movie_names.head())
 
 movie_data = pd.merge(ratings_data,movie_names,on='movieId')
